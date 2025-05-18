@@ -7,9 +7,9 @@
     </div>
     <div class="py-8 flex justify-between items-center mt-auto">
         <div>
-            <a href="#" class="bg-white/10 px-2 py-1 rounded-full text-xs hover:bg-white/20 transition-colors  duration-360">Tag</a>
-            <a href="#" class="bg-white/10 px-2 py-1 rounded-full text-xs hover:bg-white/20 transition-colors  duration-360">Tag</a>
-            <a href="#" class="bg-white/10 px-2 py-1 rounded-full text-xs hover:bg-white/20 transition-colors  duration-360">Tag</a>
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
         </div>
         <img src="https://placehold.co/42"
         alt="Company Logo"

@@ -1,21 +1,23 @@
-<div class="p-4 bg-white/10 rounded-xl flex flex-col text-center">
+<x-panel class="flex flex-col text-center">
+
+
     <div class="self-start text-sm">Laracasts</div>
-    <div class="py-8 font-bold">
-        <h3>Senior Laravel Developer</h3>
+    <div class="py-8 ">
+        <h3 class="group-hover:text-blue-800 text-xl font-bold
+        transition-colors duration-300">Senior Laravel Developer</h3>
         <p>Remote</p>
-        <p>$100,000</p>
+        <p class="text-sm text-gray-700 mt-auto">$100,000</p>
     </div>
-    <div class="py-8 flex justify-between items-center mt-auto">
+    <div class="flex justify-between items-center mt-auto">
         <div>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
+            <x-tag size="small">Frontend</x-tag>
+            <x-tag size="small">Backend</x-tag>
+            <x-tag size="small">Fullstack</x-tag>
         </div>
-        <img src="https://placehold.co/42"
-        alt="Company Logo"
-        class="rounded-full">
+        <x-employer-logo width="42" />
     </div>
-    <div>
-        <a href="/job/1">Apply</a>
-    </div>
-</div>
+    {{-- <div>
+        <a href="/job/1" class="text-tiny">Apply</a>
+    </div> --}}
+
+</x-panel>

@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    // Creates a one-to-one relationship with the Employer model
+    public function employer(){
+        return $this->hasOne(Employer::class);
+    }
 }

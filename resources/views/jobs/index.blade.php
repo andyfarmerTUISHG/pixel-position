@@ -2,12 +2,11 @@
     <div class="space-y-10">
         <section class="text-center pt-6">
             <h1 class="font-bold text-4xl">Lets Find your next job!</h1>
-            <p>Pixel Positions is a job board for remote jobs. We help you find the best remote jobs for you.</p>
-            <form action="" class="mt-6">
-                <input type="text" placeholder="Search jobs..."
-                class="rounded-xl bg-white/5 border-white/10 px-5 py-4 w-full max-w-xl"
-                >
-            </form>
+            <p class="mt-2 mb-4">Pixel Positions is a job board for remote jobs. We help you find the best remote jobs for you.</p>
+
+            <x-forms.form action="/search">
+                <x-forms.input name="q" placeholder="Search jobs..." :label=false />
+            </x-forms.form>
         </section>
         <section>
             <x-section-heading>Featured Jobs</x-section-heading>

@@ -11,7 +11,7 @@ class SearchController extends Controller
 
         $jobs = Jobs::where('title', 'like', '%' . request('q') . '%')->get();
         // dd($jobs);
-
+        // TODO: Add pagination, Search by tags
         return view('results', [
             "jobs"=> $jobs,
         ]);

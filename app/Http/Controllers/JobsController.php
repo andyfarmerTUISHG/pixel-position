@@ -13,7 +13,10 @@ class JobsController extends Controller
      */
     public function index()
     {
-        //
+        $jobs = Jobs::all();
+        return view('jobs.index', [
+            "jobs" => $jobs,
+        ]);
     }
 
     /**

@@ -18,7 +18,8 @@
                 <x-tag size="small" :$tag />
             @endforeach
         </div>
-        <x-employer-logo width="42" />
+        <x-employer-logo :employer="$job->employer" width="42" />
+
     </div>
     {{-- <div>
         <a href="/job/1" class="text-tiny">Apply</a>

@@ -32,6 +32,7 @@
                     <a href="/jobs/create">Post a Job</a>
                     <form action="/logout" method="POST" class="inline">
                         @csrf
+                        @method('DELETE')
                         <button type="submit" class="bg-red-500 text-white rounded px-4 py-2 hover:bg-red-600 transition-colors duration-300 cursor-pointer">Logout</button>
                     </form>
                 @endauth
